@@ -7,6 +7,6 @@ This is a repository for my week 2 independent project.
 ## Link
 {}
 ## Technologies Used
-{I used HTML to build the basis of the website and I used CSS as a stylesheet for the website.}
+{I used HTML to build the basis of the website including the form and used css to style the page and javascript to retrieve information from the form and come up with the akan names as resluts.}
 ### License
 [MIT](license)
