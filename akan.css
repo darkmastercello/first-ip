@@ -1,3 +1,17 @@
 body{
     background-color: aqua;
 }
+.form{
+    border-style: solid;
+    border-color: black;
+    background-color:gray;
+    font-size: larger;
+    float: left;
+    width: 350px;
+}
+.story{
+    border-style: groove;
+    border-color: black;
+    font-style: italic;
+    font-size: larger;
+}
