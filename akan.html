@@ -8,9 +8,6 @@
 </head>
 
 <body>
-    <h1>Find out your Akan name!</h1>
-    <script src="akan.js"></script>
-
 
     <div class="story">
         <h1><strong>APP GOAL</strong> </h1>
@@ -23,27 +20,29 @@
     <br><br>
     <h2>FORM</h2>
     <p>Fill in the form below and submit to print out your akan name.</p>
-    <form id="form">
+    <form id="detailForm">
         <label for="century" class="labels">Century</label>
-        <input type="number" class="form" placeholder="Enter the century" id="century" required min="0" max="30">
+        <input type="number" class="form-control" placeholder="Enter the century" id="century" required min="0"
+            max="30">
         <label for="year" class="labels">Year</label>
-        <input type="number" placeholder="Enter the year" class="form" id="year" required min="0" max="100">
+        <input type="number" placeholder="Enter the year" class="form-control" id="year" required min="0" max="100">
         <label for="month" class="labels">Month</label>
         <input type="number" class="form" placeholder="Enter the month of the year" id="month" required min="0"
             max="12">
+        <br>
         <label for="monthDay" class="labels">Day of month</label>
-        <input type="number" placeholder="Enter the day of the month" class="form" id="monthday" required min="0"
-            max="12">
+        <input type="number" placeholder="Enter the day of the month" class="form-control" id="monthday" required
+            min="0" max="12">
         <label for="Gender">Gender</label>
         <select id="Gender">
             <option>male</option>
             <option>female</option>
         </select>
         <br><br>
-        <input type="submit" value="Submit">
+        <button type="submit" class="btn btn-primary">submit</button>
     </form>
-
-
+    <p id="result"></p>
+    <script src="akan.js"></script>
 </body>
 
 </html>
