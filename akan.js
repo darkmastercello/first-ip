@@ -2,13 +2,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
   console.log("DOM fully loaded and parsed")
 }
 )
-let CC = document.querySelector("#century").value
-let MM = document.querySelector("#month")
-let YY = document.querySelector("#year")
-let DD = document.querySelector("#datemonth")
 
 
-
+let day = function () {
+  let CC = document.querySelector("#century").value
+  let MM = document.querySelector("#month").value
+  let YY = document.querySelector("#year").value
+  let DD = document.querySelector("#date").value
+}
 
 
 
