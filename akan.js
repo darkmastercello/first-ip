@@ -11,7 +11,12 @@ let day = function () {
   let YY = document.querySelector("#year").value
   let DD = document.querySelector("#date").value
 }
-
+function calculate() {
+  day()
+  dayOfTheWeek = (((CC / 4) - 2 * CC - 1) + ((5 * YY / 4)) + ((26 * (MM + 1) / 10)) + DD) % 7
+  return (Math.floor(dayOfTheWeek))
+  alert(dayOfTheWeek)
+}
 
 
 
