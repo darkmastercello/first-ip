@@ -2,7 +2,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
   console.log("DOM fully loaded and parsed")
 }
 )
-
+let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Afua", "Afua", "Ama"];
 
 let day = function () {
   let CC = document.querySelector("#century").value
