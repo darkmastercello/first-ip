@@ -36,7 +36,8 @@
                     </div>
                     <div class="form-group">
                         <label for="Year">Year</label>
-                        <input type="year" class="form-control" id="year" placeholder="enter year" required>
+                        <input type="year" class="form-control" id="year" placeholder="enter year" min="1900" max="2020"
+                            required>
                     </div>
                     <div class="form-group">
                         <label for="month">month</label>
@@ -61,12 +62,17 @@
                         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                         <button onclick="result();">Submit</button>
 
-
                     </div>
+            </div>
+        </div>
+    </div>
+    </form>
+    <p id="result"></p>
 
-                </form>
-                <p id="result"></p>
-                <script src="akan.js"></script>
+    <script src="akan.js"></script>
+
+
 </body>
+
 
 </html>
