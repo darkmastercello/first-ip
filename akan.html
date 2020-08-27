@@ -11,65 +11,80 @@
     <link href="akan.css" rel="stylesheet" type="text/css">
 </head>
 
+
 <body>
 
     <div class="story">
-        <h1><strong>APP GOAL</strong> </h1>
-        <p>
-            This web application is designed to use the users input in the required sections to determine the user's
-            Akan
-            name.
-        </p>
+        <h1>YOUR AKAN NAME</h1> <br>
+        <h2><strong>APP GOAL</strong> </h2>
+
     </div>
-    <br><br>
-    <h2>FORM</h2>
-    <p>Fill in the form below and submit to print out your akan name.</p>
+    <p>
+        Hello there! This is a web application that takes your birthday details and calculates the day of the week
+        you were born and then depending on your gender, outputs your Akan Name. <a class="research"
+            href="https://en.wikipedia.org/wiki/Akan_names" target="_blank">Click here to learn more on Akan
+            names</a>
+
+    </p>
+
     <div class="container">
         <div class="row">
 
-            <div class="col-md-12">
-                <form>
-                    <div class="form-group">
-                        <label for="Century">Century</label>
-                        <input type="text" class="form-control" id="century" placeholder="enter century digits"
-                            required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Year">Year</label>
-                        <input type="year" class="form-control" id="year" placeholder="enter year" min="1900" max="2020"
-                            required>
-                    </div>
-                    <div class="form-group">
-                        <label for="month">month</label>
-                        <input type="number" class="form-control" id="month" placeholder="enter month digits" min="1"
-                            max="12" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="Year">Date</label>
-                        <input type="text" class="form-control" id="date" placeholder="enter date" min="1" max="31"
-                            required>
-                    </div>
+            <div class="col-md-6 right">
+                <div class="panel col-sm-6 offset-sm-3">
+
+                    <form id="form">
+                        <div class="form-group">
+                            <label for="Year">Year</label>
+                            <input type="number" class="form-control" id="year" placeholder="eg 2020" min="0" max="2030"
+                                required>
+                        </div>
 
 
-                    <div class="form-group form-check">
-                        <input type="radio" name="morf" class="form-check-input" value="" id="gender">
-                        <label for="male">Male</label>
-                        <br>
-                        <input type="radio" name="morf" class="form-check-input" value="" id="gender">
-                        <label for="female">Female</label>
-                    </div>
-                    <div>
-                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                        <button onclick="result();">Submit</button>
+                        <div class="form-group">
+                            <label for="month">month</label>
+                            <input type="number" class="form-control" id="month" placeholder="eg.2" min="0" max="12"
+                                required>
+                        </div>
 
-                    </div>
+
+                        <div class="form-group">
+                            <label for="monthDay">Day</label>
+                            <input type="number" class="form-control" id="monthday" placeholder="eg.1" min="0" max="31"
+                                required>
+                        </div>
+
+
+                        <div> <input type="radio" class="genders labels" value="male" id="morf" name="radios"
+                                required>Male
+                            <input type="radio" class="genders labels" value="female" id="morf" name="radios"
+                                required>Female</div>
+
+
+                        <button type="submit" class="btn btn-primary">click here</button>
+                    </form>
+                </div>
+
+                <div class="col-md-12">
+                    <h3>
+                        <bold>Your Name</bold>
+                    </h3>
+
+                    <p>Based on the Akan people of Ghana, your name is as shown below:</p>
+
+
+                    <p id="result"></p>
+
+
+
+                </div>
+
+                <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+                <script src="akan.js"></script>
             </div>
         </div>
     </div>
-    </form>
-    <p id="result"></p>
-
-    <script src="akan.js"></script>
 
 
 </body>
